@@ -30,7 +30,6 @@ export default function FetchCSVData() {
             const rowData = rows[i].split(',');
             const rowObject: Record<string, any> = {};
             
-            //i feel like there should be a better way to do this ...
             for (let j = 0; j < headers.length; j++) {
                 const key = headers[j];
 
