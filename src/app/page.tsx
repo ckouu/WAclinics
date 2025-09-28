@@ -89,9 +89,9 @@ export default function Home() {
           <h1>About Us</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat pharetra risus a fringilla. Suspendisse quis tristique ipsum, et eleifend dui. Vivamus commodo, nibh sed ultrices finibus, ex eros consequat ligula, maximus hendrerit diam orci at tortor. Aliquam hendrerit pharetra ex, at dignissim augue volutpat eu.
           <div>
-            <a href="https://www.instagram.com/healthequityforward/" className="ig-button"></a>
-            <a href="https://www.instagram.com/healthequityforward/" className="email-button"></a>
-            <a href="https://www.instagram.com/healthequityforward/" className="web-button"></a>
+            <a href='https://www.google.com/' className="ig-button"></a>
+            <a href='https://www.google.com/' className="email-button"></a>
+            <a href='https://www.google.com/' className="web-button"></a>
           </div>
         </div>
       </section>
