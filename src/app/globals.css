@@ -1,26 +1,207 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --light-pink: #FFF1F5;
+  --bg-pink: #FFE1EA;
+  --dark-pink: #FFBDD1;
+  --light-orange: #FFF2EC;
+  --orange: #FEC3AB;
+  --light-blue: #CFDDFF;
+  --dark-blue: #7698EF;
+  --text: #943D1B;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html, body {
+  scroll-behavior: smooth;
+  background-color: var(--bg-pink);
+  font-family: "Karla", sans-serif;
+  color: var(--text);
+  font-size: 1.2vw;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+nav {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: var(--dark-pink);
+  border-bottom: 0.6vw solid var(--orange);
+  height: 6vw;
+  padding-right: 8vw;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw 8vw;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  float: right;
+  margin-top: 2vw;
+  margin-left: 5vw;
+  text-decoration: none;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.map-container {
+  z-index: 0;
+  width: 100%;
+  height: 60vw;
+  overflow: hidden;
+}
+
+.popup {
+  margin: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Karla", sans-serif;
+  font-size: 1.1vw;
+}
+
+.services {
+  background-color: var(--light-blue);
+  margin: 0.5vw 0 0.5vw;
+  padding-right: 1vw;
+  border-radius: 1vw;
+}
+
+.blue-button {
+  background-color: var(--dark-blue);
+  text-decoration: none;
+  color: white !important;
+  margin-top: 0.5vw;
+  border-radius: 1vw;
+  padding: 1vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-header {
+  float: left;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+
+.pink-callout {
+  background-color: var(--light-pink);
+  margin: -3vw -8vw 2vw -8vw;
+  padding: 3vw 8vw;
+}
+
+.resources-container {
+  display: flex;
+  margin-bottom: 2vw;
+  column-gap: 3vw;
+}
+
+.resource {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, var(--orange), transparent);
+  width: 30%;
+  padding: 1vw;
+  border: 0.3vw solid var(--light-pink);
+  border-radius: 1.5vw;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.resource-link {
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-pink);
+  border-radius: 3vw;
+  padding: 1vw;
+}
+
+.arrow {
+  background-image: url('/arrow_right.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2vw;
+  height: 2vw;
+  margin-left: auto;
+}
+
+.q-item {
+  background-color: var(--light-orange);
+  border-radius: 0.5vw;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  padding-right: 1.5vw;
+  padding-left: 1.5vw;
+  margin-top: 1vw;
+}
+
+.q-container {
+  display: flex;
+  width: 100%;
+}
+
+.collapse-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  background-image: url('/collapse.svg');
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: 2%;
+  margin-left: auto;
+}
+
+.expand-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  background-image: url('/expand.svg');
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: 2%;
+  margin-left: auto;
+}
+
+.ig-button {
+  background-image: url('/ig.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5vw;
+  height: 5vw;
+  margin: 2vw 2vw 2vw 0;
+  display: inline-flex;
+}
+
+.email-button {
+  background-image: url('/mail.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5vw;
+  height: 5vw;
+  margin: 2vw 2vw 2vw 0;
+  display: inline-flex;
+}
+
+.web-button {
+  background-image: url('/web.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5vw;
+  height: 5vw;
+  margin: 2vw 2vw 2vw 0;
+  display: inline-flex;
 }
