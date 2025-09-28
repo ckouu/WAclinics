@@ -1,6 +1,6 @@
 ## WA Clinic Tracker
 
-This website was created with the purpose of providing easier accessibility to reproductive health resources, with the primary feature being an interactive map of reproductive health clinics in the Washington area. TypeScript, CSS, React, and NextJS were used to implement components like expandable Q&A tabs, while LeafletJS was used to create the map. The markers on the map (temporarily replaced by two example markers) are gathered from and connected to a Google Sheet which can be found [here](https://docs.google.com/spreadsheets/d/1OK4c-L0VQEHX8Bw7zNA_pFfRj487osocdktRXkIYlh0/edit?usp=sharing).
+This website was created with the purpose of providing easier accessibility to reproductive health resources, with the primary feature being an interactive map of reproductive health clinics in the Washington area. TypeScript, CSS, React, and NextJS were used to implement components like expandable Q&A tabs, while LeafletJS was used to create the map. The markers on the map (currently two example markers) are gathered from and connected to a Google Sheet which can be found [here](https://docs.google.com/spreadsheets/d/1OK4c-L0VQEHX8Bw7zNA_pFfRj487osocdktRXkIYlh0/edit?usp=sharing).
 
 ## Instructions
 
